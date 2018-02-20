@@ -21,7 +21,7 @@ html(lang="en")
 
     nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
       .container
-        a.navbar-brand.js-scroll-trigger(href="#page-top") Number Fill In
+        a.navbar-brand.js-scroll-trigger(href="#page-top") Games By Nilo
         button.navbar-toggler.navbar-toggler-right(type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation")
           i.fa.fa-bars
 
@@ -41,35 +41,36 @@ html(lang="en")
         .row.h-100
           .col-lg-7.my-auto
             .header-content.mx-auto
-              h1.mb-5 New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!
-              a.btn.btn-outline.btn-xl.js-scroll-trigger(href="#download") Start Now for Free!
-
-
-        .col-lg-5.my-auto
-          .device-container
-            .device-mockup.galaxy_s5.portrait.white
-              .device
-                .screen
-                  img(src="img/demo-screen-1.jpg" alt="").img-fluid
-                .button
+              h1.mb-5
+                | Busy day?
+                br
+                | Why not relax and unwind with a Number Fill In puzzle.
+              a.btn.btn-outline.btn-xl.js-scroll-trigger(href="#download") Download Now for Free
+          .col-lg-5.my-auto
+            .device-container
+              .device-mockup.galaxy_s5.portrait.white
+                .device
+                  .screen
+                    img.img-fluid(src="img/demo-screen-1.jpg" alt="")
+                  .button
 
     section#download.download.bg-primary.text-center
       .container
         .row
           .col-md-8.mx-auto
-            h2.section-heading Discover what all the buzz is about!
-            p Our app is available on any mobile device! Download now to get started!
+            h2.section-heading Call to Action section
+            p Our app is available on the Google Play store, download now to get started.
             .badges
-              a.badge-link(href="#")
+              a.badge-link(href="https://play.google.com/store/apps/details?id=com.gamesbynilo.numberfillin")
                 img(src="img/google-play-badge.svg" alt="")
-              a.badge-link(href="#")
-                img(src="img/app-store-badge.svg" alt="")
+              //- a.badge-link(href="#")
+              //-   img(src="img/app-store-badge.svg" alt="")
 
     section#features.features
       .container
         .section-heading.text-center
-          h2 Unlimited Features, Unlimited Fun
-          p.text-muted Check out what you can do with this app theme!
+          h2 Features Title
+          p.text-muted Features sub title
           hr
 
         .row
@@ -78,7 +79,7 @@ html(lang="en")
               .device-mockup.galaxy_s5.portrait.white
                 .device
                   .screen
-                    img(src="img/demo-screen-1.jpg" alt="").img-fluid
+                    img.img-fluid(src="img/demo-screen-1.jpg" alt="")
                   .button
 
           .col-lg-8.my-auto
@@ -87,28 +88,27 @@ html(lang="en")
                 .col-lg-6
                   .feature-item
                     i.icon-screen-smartphone.text-primary
-                    h3 Device Mockups
-                    p.text-muted Ready to use HTML/CSS device mockups, no Photoshop required!
+                    h3 Over 700 puzzles
+                    p.text-muted description
 
                 .col-lg-6
                   .feature-item
                     i.icon-camera.text-primary
-                    h3 Flexible Use
-                    p.text-muted Put an image, video, animation, or anything else in the screen!
+                    h3 Puzzles come in different sizes
+                    p.text-muted From 7x7 to 15x15
 
               .row
                 .col-lg-6
                   .feature-item
                     i.icon-present.text-primary
-                    h3 Free to Use
-                    p.text-muted As always, this theme is free to download and use for any purpose!
-
+                    h3 Free to play
+                    p.text-muted Free
 
                 .col-lg-6
                   .feature-item
                     i.icon-lock-open.text-primary
-                    h3 Open Source
-                    p.text-muted Since this theme is MIT licensed, you can use it commercially!
+                    h3
+                    p.text-muted
 
     section.cta
       .cta-content
@@ -140,13 +140,6 @@ html(lang="en")
     footer
       .container
         p &copy; Nilo Ballener 2018. All Rights Reserved.
-        ul.list-inline
-          li.list-inline-item
-            a(href="#") Privacy
-          li.list-inline-item
-            a(href="#") Terms
-          li.list-inline-item
-            a(href="#") FAQ
 
     script(src="vendor/jquery/jquery.min.js")
     script(src="vendor/bootstrap/js/bootstrap.bundle.min.js")
