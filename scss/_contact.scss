@@ -20,6 +20,14 @@ section.contact {
                 color: white;
                 border-radius: 100%;
             }
+            &.social-email {
+                a {
+                    background-color: $brand-email;
+                    &:hover {
+                        background-color: darken($brand-email, 5%);
+                    }
+                }
+            }
             &.social-twitter {
                 a {
                     background-color: $brand-twitter;
