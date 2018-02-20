@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var pug = require('gulp-pug');
 var sass = require('gulp-sass');
 var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
@@ -107,7 +108,13 @@ gulp.task('js:minify', function() {
 gulp.task('js', ['js:minify']);
 
 // Default task
-gulp.task('default', ['css', 'js', 'vendor']);
+gulp.task('default', ['css', 'js', 'pug', 'vendor']);
+
+gulp.task('pug', function () {
+  return gulp.src(['./*.pug'])
+  .pipe(pug())
+  .pipe(gulp.dest('./'));
+});
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -118,9 +125,11 @@ gulp.task('browserSync', function() {
   });
 });
 
+
 // Dev task
-gulp.task('dev', ['css', 'js', 'browserSync'], function() {
+gulp.task('dev', ['css', 'js', 'pug', 'browserSync'], function() {
   gulp.watch('./scss/*.scss', ['css']);
   gulp.watch('./js/*.js', ['js']);
+  gulp.watch('./*.pug', ['pug']);
   gulp.watch('./*.html', browserSync.reload);
 });
