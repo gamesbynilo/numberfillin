@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "popper.js": "^1.12.9",
+    "startbootstrap-new-age": "^4.0.0"
+  }
+}
